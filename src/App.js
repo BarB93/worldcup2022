@@ -93,7 +93,7 @@ function App() {
   // console.log('res', res)
 
   const items = res.map((user, index) => (
-    <Panel key={user.name} header={`${index+1}. ${user.name} - ${user.totalPoint} баллов`}>
+    <Panel key={user.name} header={<div className={'header'}>{`${index+1}. ${user.name} - ${user.totalPoint} баллов`}</div>}>
       <div>
         <h3>Группы ({user.result.groups.length} баллов)</h3>
         <ul>
